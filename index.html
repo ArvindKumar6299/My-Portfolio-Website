@@ -12,12 +12,16 @@
         <div class="container">
             <nav>
                 <img src="image/a-new.webp" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
             </nav>
             <div class="header-text">
                 <img src="image/mai_huuu.jpg" class="profile">
@@ -101,6 +105,71 @@
             </div>
         </div>
       </div>
+           <!-- --------------- Portfolio ------------------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="image/Screenshot (368).png" >
+                        <div class="layer">
+                            <h3>Todo-List</h3>
+                            <p>This application is used to list your daily todos work.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/Screenshot (370).png" >
+                        <div class="layer">
+                            <h3>Music Player</h3>
+                            <p>Its Music player website to listen music with mutiple features.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="image/Screenshot (367).png" >
+                        <div class="layer">
+                            <h3>Toor-Travel</h3>
+                            <p>This application is made for Toor Packeges. To visit India wonderfull Places.</p>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>   
+        <!-- ------------ contact ------------------------ -->
+      
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i>  arvindkumar735240@gmail.com</p>
+                        <p><i class="fa-solid fa-phone-flip"></i>  6299697165</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com/home"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.linkedin.com/in/arvind-kumar-91691a231/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="image/Arvind Kumar (Resume).pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2 ">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright @ YadavJi. Made with <i class="fa-solid fa-heart"></i> by Arvind Kumar</p>
+                </div>
+            </div>
+        </div>
 
     <script src="index.js"></script>
 </body>
